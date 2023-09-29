@@ -301,19 +301,7 @@ cmd({
             if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            citel.reply('*┏━━━━━━━━━━━━━┓
-
-🐹 *ʀᴏᴡᴅʏ ʙᴀʙʏ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ* 🐹
-
-▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-
-✷▎🎋⃟🥷 *ᴄʀᴇᴀᴛᴇʀ*: ᴋᴀʟɪɴᴅᴜ 
-
-✷▎🎋⃟🥷 *ᴄʀᴇᴀᴛᴇʀ ɴᴜᴍʙᴇʀ*:  wa.me//+94758179948
-
-┗━━━━━━━━━━━━━┛
-
-*ʏᴏᴜʀ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ*...🔥🔥 Downloadig:* '+titleYt)
+            citel.reply('*ʏᴏᴜ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴅᴀʀ ʙʏ Qᴜᴇᴇɴ ɴɪᴄᴋʏ:* '+titleYt)
             const stream = ytdl(anu.url, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
