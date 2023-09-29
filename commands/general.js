@@ -19,7 +19,7 @@ cmd({
     alias :['gpt'],
     desc: "chat with an AI(GPT)",
     category: "AI",
-    use: '<Hii,Secktor>',
+    use: '<Hii,queen nicky>',
     filename: __filename,
 },
 async(Void, citel,text) => {
@@ -115,13 +115,12 @@ cmd({
     },
     async(Void, citel) => {
         let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
-        let cap = `Hey ${citel.pushName}\n
+        let cap = `ᴡᴇʟᴄᴏᴍᴇ ${citel.pushName}\n
 *⭐ Total Stars:* ${data.stargazers_count} stars
 *🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* citel-x.herokuapp.com/repo
-*Group:* citel-x.herokuapp.com/support
-*Deploy Your Own:*-
-citel-x.herokuapp.com`
+*🍁 Repo:* ᴄᴏᴏᴍɪɴɢ ꜱᴏᴏɴ...
+*♾Group:* https://chat.whatsapp.com/E8F5pT0vqVbJjYEYcmQnBr
+*👩‍💻Conect owner number Dumidu :*-94742443114`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -129,7 +128,7 @@ citel-x.herokuapp.com`
             headerType: 4,
             contextInfo: {
                 externalAdReply: {
-                    title: "Secktor-Repo",
+                    title: "QUEEN NICKY REPO",
                     body: "Easy to Use",
                     thumbnail: log0,
                     mediaType: 4,
@@ -158,10 +157,10 @@ cmd({
         latensie = speed() - timestampe;
         let ter = `
 🔰 *${tlang().title}* 🔰
-*🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
+*🌟Description:* A WhatsApp bot with rich features, QUEEN NICKY MD BOT CREATER DUMIDU 
 *⚡Speed:* ${latensie.toFixed(4)} ms
 *🚦Uptime:* ${runtime(process.uptime())}
-*🕸Version:* 0.0.7
+*🕸Version:* 0.0.1
 *👤Owner:*  ${Config.ownername}
 *Powered by ${tlang().title}*
 `;
