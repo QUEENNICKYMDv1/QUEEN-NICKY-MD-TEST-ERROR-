@@ -1,45 +1,37 @@
-const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
+const { cmd, fetchJson } = require('../lib');
 
-const { fetchJson, cmd, citel, Config, tlang } = require('../lib')
+cmd(
+    {
+        pattern: "fb",
+        react: "⬆️",
+        filename: __filename
+    },
+    async (Void, citel, text) => {
+        try {
+            if (!text) {
+                citel.reply("*Please provide a valid URL* 🌏.");
+                return;
+            }
 
-cmd({
+            const wamod = await fetchJson(`https://kaveesha-sithum-api.cyclic.cloud/fbdl?url=${text}`);
 
-            pattern: "fb",
-
-            desc: "fb down",
-
-            react: "🧩",
-
-            category: "downloader"
-
-        },
-
-        async(Void, citel, text) => {
-
-            if (!text) return
-
-const fbdl = await fetchJson(`https://kaveesha-sithum-api.cyclic.cloud/fbdl?url=${text}`)
-
-const videolink = fbdl.result[0].url[0].url
-
-            citel.reply (`*Hello ${citel.pushName} I Am Finding Your Facebook Video*`);
-
-       Void.sendMessage(citel.chat, {
-
-                video: {
-
-                    url: videolink ,
-
+            if (!wamod.result || !wamod.result.hd) {
+                citel.reply("Failed to fetch video URL or HD link ❌.");
+                return;
+            }
+            
+            await Void.sendMessage(
+                citel.chat,
+                {
+                    video: { url: wamod.result.hd },
+                    mimetype: "video/mp4",
+                    caption:'🔮ꜱʜᴇɴᴜ Qᴜᴇᴇɴ ꜰʙ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴅ 🌟🔮'
                 },
+                { quoted: citel }
+            );
 
-                caption: tlang().footer,
-
-            }, {
-
-                quoted: citel,
-
-            });
-
- }
-
-)
+        } catch (error) {
+            citel.reply("An error occurred: " + error.message);
+        }
+    }
+);
