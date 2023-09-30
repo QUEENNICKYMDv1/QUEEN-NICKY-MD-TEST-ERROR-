@@ -233,7 +233,7 @@ cmd({
                     headerType: 4,
                     contextInfo: {
                         externalAdReply: {
-                            title: `Here it is✨`,
+                            title: `𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳`,
                             body: `${Config.ownername}`,
                             thumbnail: log0,
                             mediaType: 2,
@@ -301,12 +301,11 @@ cmd({
             if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            citel.reply('*╭───────────────◆
+            citel.reply('╭───────────────◆
 │⿻  🎋⃟🥷 *Qᴜᴇᴇɴ ɴɪᴄᴋʏ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*🎋⃟🥷 
-│
-│⿻ ✷ *ᴄʀᴇᴀᴛᴇʀ*: Dumidu 
+││⿻ ✷ *ᴄʀᴇᴀᴛᴇʀ*: Dumidu 
 │⿻✷ *ᴄʀᴇᴀᴛᴇʀ ɴᴜᴍʙᴇʀ*:  wa.me//+94742443114
-╰────────────────◆:* '+titleYt)
+╰────────────────◆: '+titleYt)
             const stream = ytdl(anu.url, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
