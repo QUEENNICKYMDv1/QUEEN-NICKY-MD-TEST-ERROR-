@@ -3,7 +3,7 @@ const { cmd, fetchJson } = require('../lib');
 cmd(
     {
         pattern: "fb",
-        react: "⬆️",
+        react: "💃",
         filename: __filename
     },
     async (Void, citel, text) => {
@@ -25,7 +25,7 @@ cmd(
                 {
                     video: { url: wamod.result.hd },
                     mimetype: "video/mp4",
-                    caption:'kamathi ekak daganna'
+                    caption:'┏━━━━━━━━━━━━━┓\n\n🐹 *Qᴜᴇᴇɴ ɴɪᴄᴋʏ ꜰʙ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*🐹\n\n▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁\n\n✷▎🎋⃟🥷 *ᴄʀᴇᴀᴛᴇʀ*: dumidu\n\n✷▎🎋⃟🥷 *ᴄʀᴇᴀᴛᴇʀ ɴᴜᴍʙᴇʀ*:  wa.me//+94742443114\n\n┗━━━━━━━━━━━━━┛\n\n*ʏᴏᴜʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ*...🔥🔥'
                 },
                 { quoted: citel }
             );
