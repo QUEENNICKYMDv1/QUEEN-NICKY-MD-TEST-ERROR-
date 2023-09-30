@@ -25,7 +25,7 @@ cmd(
                 {
                     video: { url: wamod.result.hd },
                     mimetype: "video/mp4",
-                    caption:'🔮ꜱʜᴇɴᴜ Qᴜᴇᴇɴ ꜰʙ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴅ 🌟🔮'
+                    caption:'kamathi ekak daganna'
                 },
                 { quoted: citel }
             );
