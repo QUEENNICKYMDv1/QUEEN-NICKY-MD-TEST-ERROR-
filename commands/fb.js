@@ -3,7 +3,7 @@ const { cmd, fetchJson } = require('../lib');
 cmd(
     {
         pattern: "fb",
-        react: "💃",
+        react: "📽️",
         filename: __filename
     },
     async (Void, citel, text) => {
