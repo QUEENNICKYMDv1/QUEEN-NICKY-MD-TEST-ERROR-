@@ -243,32 +243,41 @@ cmd({
             desc: "is bot alive??"
         },
         async(Void, citel, text, isAdmins) => {
+Void.sendMessage(citel.chat, { 
+              react: { 
+                  text: "❤️", 
+                  key: citel.key 
+              } 
+          }) 
+          await Void.sendPresenceUpdate('recording', citel.chat);
+          await Void.sendMessage(citel.chat, { audio: {url : 'https://github.com/nipuna15/Voice/raw/main/Alive.mp3',}, mimetype: 'audio/mpeg', ptt: true }, { quoted: citel, });
             let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Dumidu.*`
             const alivtxt = `
-*Hello, ${citel.pushName},*
-_This is  ${tlang().title}._
+🤗 *Hello, ${citel.pushName},*
+
+🥽 This is  ${tlang().title}.
+
 ${alivemessage}
 
-*🍧Version:-* _0.0.1_
-*🆙Uptime:-* _${runtime(process.uptime())}_
-*👩‍💻Owner:-* _${Config.ownername}_
-*🎧Branch:-* _${Config.BRANCH}_
+🍧Version:-* 0.0.
+🆙Uptime:-* ${runtime(process.uptime())}
+👩‍💻Owner:-* ${Config.ownername}
+🎧Branch:-* ${Config.BRANCH}
 
-_●Type ${prefix}menu for my command list._
+● Type ${prefix}menu for my command list.
 
-_👩‍✈‍Powered by ${Config.ownername}_
-`;
+👩‍🎓 Powered by ${Config.ownername}`;
             let aliveMessage = {
                 image: {
-                    url: await botpic(),
-                },
+                 url:  await botpic(),
+                       },
                 caption: alivtxt,
                 footer: tlang().footer,
                 headerType: 4,
             };
              return Void.sendMessage(citel.chat, aliveMessage, {
                 quoted: citel,
-            });
+            });     
 
         }
     )
