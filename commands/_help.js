@@ -86,7 +86,8 @@ Secktor.cmd({
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
-                };
+               };
+             await Void.sendMessage(citel.chat, { audio: {url: "https://github.com/Pramesh04/sup_to_ravana/raw/main/Audio/AUD-20230725-WA0324.mp3" }, mimetype: 'audio/mp4', ptt: true, }, { quoted: citel })
                 return await Void.sendMessage(citel.chat, buttonMessaged);
             }
         }
