@@ -59,6 +59,42 @@ cmd({
 
     )
      //---------------------------------------------------------------------------
+cmd(
+    {
+        pattern: "tiktok",
+        react: "🎆",
+        filename: __filename
+    },
+    async (Void, citel, text) => {
+        try {
+            if (!text) {
+                citel.reply("Please provide a valid URL.");
+                return;
+            }
+
+            const tiktok = await fetchJson(`https://kaveesha-sithum.onrender.com/tiktok?url=${text}`);
+
+            if (!tiktok.result || !tiktok.result.video) {
+                citel.reply("Failed to fetch video URL ");
+                return;
+            }
+            
+            await Void.sendMessage(
+                citel.chat,
+                {
+                    video: { url: tiktok.result.video },
+                    mimetype: "video/mp4",
+                    caption: tiktok.result. title
+                },
+                { quoted: citel }
+            );
+
+        } catch (error) {
+            citel.reply("An error occurred: " + error.message);
+        }
+    }
+);
+    //---------------------------------------------------------------------------
      cmd({
         pattern: "yts",
         desc: "Gives descriptive info of query from youtube..",
