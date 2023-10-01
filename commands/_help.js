@@ -87,7 +87,7 @@ Secktor.cmd({
                     image: { url: await botpic() },
                     caption: str
                };
-             await Void.sendMessage(citel.chat, { audio: {url: "https://github.com/Pramesh04/sup_to_ravana/raw/main/Audio/AUD-20230725-WA0324.mp3" }, mimetype: 'audio/mp4', ptt: true, }, { quoted: citel })
+             await Void.sendMessage(citel.chat, { audio: {url: "https://github.com/QUEENNICKYMDv1/QUEEN-NICKY-VOICE-CENTER-/blob/main/QUEEN%20NICKY%20.mp3" }, mimetype: 'audio/mp4', ptt: true, }, { quoted: citel })
                 return await Void.sendMessage(citel.chat, buttonMessaged);
             }
         }
