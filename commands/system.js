@@ -114,7 +114,7 @@ cmd({
         if(mime !='videoMessage' && mime !='imageMessage' ) return await citel.reply("Uhh Please, Reply To An Image/Video")
         let media = await Void.downloadAndSaveMediaMessage(citel.quoted);
         let anu = await TelegraPh(media);
-        await citel.reply('*Here is URL of your media.\n'+util.format(anu));
+        await citel.reply('Queen nicky is URL of your media.\n'+util.format(anu));
         return await fs.unlinkSync(media);
     })
 
@@ -245,7 +245,7 @@ cmd({
         async(Void, citel, text, isAdmins) => {
 Void.sendMessage(citel.chat, { 
               react: { 
-                  text: "❤️", 
+                  text: "💃", 
                   key: citel.key 
               } 
           }) 
@@ -259,10 +259,10 @@ Void.sendMessage(citel.chat, {
 
 ${alivemessage}
 
-🍧Version:-* 0.0.
-🆙Uptime:-* ${runtime(process.uptime())}
-👩‍💻Owner:-* ${Config.ownername}
-🎧Branch:-* ${Config.BRANCH}
+🍧 *Version:-* 0.0.1
+🆙 *Uptime:-* ${runtime(process.uptime())}
+👩‍💻 *Owner:-* ${Config.ownername}
+🎧 *Branch:-* ${Config.BRANCH}
 
 ● Type ${prefix}menu for my command list.
 
