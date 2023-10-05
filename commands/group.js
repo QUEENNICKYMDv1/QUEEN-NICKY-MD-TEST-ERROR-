@@ -83,12 +83,13 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "support",
+	react: "👋",
         desc: "Sends official support group link.",
         category: "group",
         filename: __filename,
     },
     async(Void, citel, text) => {
-        citel.reply(`*Check your Pm ${tlang().greet}*`);
+        citel.reply(`*Check your inbox ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
             caption: `*Group Name: QUEEN-NICKY-SUPPORT*\n*Group Link:* https://chat.whatsapp.com/ClnojBuE3NCKtB69NDcRFe`,
