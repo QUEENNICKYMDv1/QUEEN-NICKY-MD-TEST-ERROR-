@@ -28,7 +28,7 @@ cmd({
             headerType: 4,
             contextInfo: {
                 externalAdReply: {
-                    title: "DARK QUEEN SIRASA NEWS",
+                    title: "QUEEN NICKY SIRASA NEWS",
                     body: "© ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴛᴇᴀᴍ",
                     thumbnail: log0,
                     mediaType: 4,
