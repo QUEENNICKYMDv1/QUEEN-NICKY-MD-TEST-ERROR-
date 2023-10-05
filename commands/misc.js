@@ -17,6 +17,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
   //---------------------------------------------------------------------------
  cmd({
     pattern: "setwelcome",
+    react: "🙏",
     desc: "sets welcome message in specific group.",
     category: "misc",
 },
@@ -36,6 +37,7 @@ async(Void, citel, text,{ isCreator }) => {
  //---------------------------------------------------------------------------
 cmd({
     pattern: "setgoodbye",
+    react: "👋",
     desc: "sets goodbye message in specific group.",
     category: "misc",
 },
@@ -54,6 +56,7 @@ async(Void, citel, text,{ isCreator }) => {
  //---------------------------------------------------------------------------
  cmd({
              pattern: "attp",
+             react: "🎆",
              desc: "Makes glowing sticker of text.",
              category: "sticker",
              filename: __filename,
@@ -65,6 +68,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/attp/${text}`)
      )
  cmd({
              pattern: "ttp",
+             react: "🎆",
              desc: "Makes static sticker of text.",
              category: "sticker",
              filename: __filename,
@@ -77,6 +81,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "exec",
+             react: "🎆",
              desc: "Evaluates quoted code with given language.",
              category: "misc",
              filename: __filename,
@@ -153,6 +158,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "uptime",
+             react: "🆙",
              alias: ["runtime"],
              desc: "Tells runtime/uptime of bot.",
              category: "misc",
@@ -202,6 +208,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "npm",
+             react: "🎆",
              desc: "download mp4 from url.",
              category: "search",
              use: '<package name>',
