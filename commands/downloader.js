@@ -105,6 +105,8 @@ cmd(
     },
 
     async(Suhail, msg, text) => {
+         if (!text) return citel.reply('Please give me Sentence to change into audio.')
+            let texttts = text
 
 
 const response = await fetch('https://api.unsplash.com/photos/random?client_id=72utkjatCBC-PDcx7-Kcvgod7-QOFAm2fXwEeW8b8cc');
