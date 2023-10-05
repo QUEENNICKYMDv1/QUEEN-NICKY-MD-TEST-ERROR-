@@ -250,7 +250,7 @@ Void.sendMessage(citel.chat, {
               } 
           }) 
           await Void.sendPresenceUpdate('recording', citel.chat);
-          await Void.sendMessage(citel.chat, { audio: {url : 'https://gist.github.com/QUEENNICKYMDv1/c86f09b4862e72d5bda7110d4a39fb49/raw',}, mimetype: 'audio/mpeg', ptt: true }, { quoted: citel, });
+          await Void.sendMessage(citel.chat, { audio: {url : 'https://raw.githubusercontent.com/X-Notiya/DarkQueen-Auto-Voice-Sender/main/Hi.mp3',}, mimetype: 'audio/mpeg', ptt: true }, { quoted: citel, });
             let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Dumidu.*`
             const alivtxt = `
 🤗 *Hello, ${citel.pushName},*
