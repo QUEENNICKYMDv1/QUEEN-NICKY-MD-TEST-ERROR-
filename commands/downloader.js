@@ -98,6 +98,7 @@ cmd(
     //---------------------------------------------------------------------------
  cmd({
         pattern: "wallpaper",
+        react: "🎆",
         desc: "To get Random Pics",
        category: "Anime Pics",
         filename: __filename
@@ -124,6 +125,7 @@ const data = await response.json();
  //---------------------------------------------------------------------------
      cmd({
         pattern: "yts",
+        react: "🔎",
         desc: "Gives descriptive info of query from youtube..",
         category: "downloader",
         filename: __filename,
@@ -157,6 +159,7 @@ const data = await response.json();
     //---------------------------------------------------------------------------
 cmd({
             pattern: "video",
+            react: "📽️",
             desc: "Downloads video from yt.",
             category: "downloader",
             filename: __filename,
@@ -219,6 +222,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "play",
+            react: "🖨️",
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
             filename: __filename,
@@ -257,6 +261,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "ringtone",
+            react: "🎵",
             desc: "Downloads ringtone.",
             category: "downloader",
             filename: __filename,
@@ -272,6 +277,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "pint",
+            react: "🖨️", 
             desc: "Downloads image from pinterest.",
             category: "downloader",
             filename: __filename,
@@ -315,6 +321,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "mediafire",
+            react: "📋",
             desc: "Downloads zip from Mediafire.",
             category: "downloader",
             filename: __filename,
@@ -347,6 +354,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "audio",
+            react: "🎧",
             alias :['song'],
             desc: "Downloads audio from youtube.",
             category: "downloader",
@@ -411,6 +419,7 @@ cmd({
 
 cmd({
             pattern: "ytmp4",
+            react: "🔎",
             desc: "Downloads video from youtube.",
             category: "downloader",
             filename: __filename,
@@ -479,6 +488,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "ytmp3",
+        react: "🔎",
         desc: "Downloads audio by yt link.",
         category: "downloader",
         use: '<yt video url>',
@@ -555,6 +565,7 @@ cmd({
   //---------------------------------------------------------------------------
 cmd({
         pattern: "ytdoc",
+        react: "🔎", 
         desc: "Downloads audio by yt link as document.",
         category: "downloader",
         use: '<ytdoc video url>',
