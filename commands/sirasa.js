@@ -3,7 +3,7 @@ const axios = require('axios')
 
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "සිරස",
+        pattern: "sirasa",
         alias: ["sirasanewd", "sn", "sirasa news"],
         desc: "Sends info about repo.",
         category: "general",
