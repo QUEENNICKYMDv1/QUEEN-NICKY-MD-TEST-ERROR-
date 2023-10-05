@@ -91,7 +91,7 @@ cmd({
         citel.reply(`*Check your Pm ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*Group Name: Secktor-Support*\n*Group Link:* https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbC`,
+            caption: `*Group Name: QUEEN-NICKY-SUPPORT*\n*Group Link:* https://chat.whatsapp.com/ClnojBuE3NCKtB69NDcRFe`,
         });
 
     }
@@ -621,6 +621,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "group",
+	    react: "📢",
             desc: "mute and unmute group.",
             category: "group",
             filename: __filename,
@@ -644,13 +645,14 @@ cmd({
                     .catch((err) => console.log(err));
             } else {
 
-                return citel.reply(`Group Mode:\n${prefix}group open- to open\n${prefix}group close- to close`);
+                return citel.reply(`Group Mode:\n${prefix}group open- to open\n${prefix}group close- to close\n\n𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳`);
             }
         }
     )
     //---------------------------------------------------------------------------
 cmd({
             pattern: "grouppic",
+	    react: "📸",
             desc: "Sets a profile pic in Group..",
             category: "group",
             filename: __filename,
@@ -682,6 +684,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "hidetag",
+	    react: "🎆",
             alias: ["htag"],
             desc: "Tags everyperson of group without mentioning their numbers",
             category: "group",
@@ -708,6 +711,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "add",
+	    react: "🖲️",
             desc: "Add that person in group",
             fromMe: true,
             category: "group",
@@ -732,6 +736,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "getjids",
+	    react: "🎆",
             desc: "Sends chat id of every groups.",
             category: "group",
             filename: __filename,
@@ -853,6 +858,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "block",
+	    react: "🚫",
             desc: "blocks that person",
             fromMe: true,
             category: "owner",
@@ -988,7 +994,7 @@ cmd({ on: "text" }, async(Void, citel) => {
                 caption: `
 ╔════◇
 ║ *Wow,Someone just*
-║ *leveled Up huh⭐*
+║ *𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳*
 ║ *👤Name*: ${citel.pushName}
 ║ *🎐Level*: ${sck1.level}🍭
 ║ *🛑Exp*: ${sck1.xp} / ${Levels.xpFor(sck1.level + 1)}
