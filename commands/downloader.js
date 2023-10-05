@@ -33,6 +33,7 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tts",
+            react: "🎆",
             desc: "text to speech.",
             category: "downloader",
             filename: __filename,
