@@ -6,7 +6,7 @@ const axios = require('axios')
 
 
 
-const url = 'https://gist.github.com/QUEENNICKYMDv1/c86f09b4862e72d5bda7110d4a39fb49/raw'
+const url = 'https://github.com/prabathLK/AUTO-VOICE-SENDER-PRABATH-MD-/blob/main/plugins/bgm/PTT-20230214-WA0029.mp3?raw=true'
 
 
 
