@@ -28,7 +28,7 @@
          const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
          //-----------------------------------------  
          if (!citel.isGroup) return citel.reply("This feature in only for Group.")
-         if (!text) return citel.reply(`❌ Please provide me term like like\n1-events\n2-antilink\n3-nsfw\n4-cardgame\n5-bot`)
+         if (!text) return citel.reply(`❌ Please provide me term like like\n1-events\n2-antilink\n3-nsfw\n4-cardgame\n5-bot\n\n\n🎀 *𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳* 🎀`)
          if (!isAdmins) return citel.reply("❌ This Command is only for Admin")
          switch (text.split(" ")[0]) {
             case 'antilink':
