@@ -95,15 +95,15 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: 'ehi6',
+            pattern: 'ehi',
  
-            alias :['e6','එහි6'],
+            alias :['ehi','එහි'],
 
             desc: 'Sends ehi',
 
             category: "ehi downloader",
 
-            react: "6️⃣",
+            react: "1️⃣",
 
             filename: __filename,
 
