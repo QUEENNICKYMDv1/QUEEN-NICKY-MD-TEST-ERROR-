@@ -217,6 +217,105 @@ ZIP CODE : 10080
         }
 
     )
+   //---------------------------------------------------------------------------
+cmd({
+
+            pattern: "QUEEN NICKY",
+           
+             alias :['QUEEN-NICKY','QN'],
+
+            desc: "(menu cmdlist).",
+
+            category: "downloader",
+
+            react: "💌",
+
+            filename: __filename,
+
+            use: '<faded-Alan walker.>',
+
+        },
+
+        async(Void, citel, text) => {
+
+         
+
+            let buttons = [{
+
+                    buttonId: `${prefix}system`,
+
+                    buttonText: {
+
+                        displayText: "System",
+
+                    },
+
+                    type: 1,
+
+                },
+
+                  {
+
+                    buttonId: `${prefix}ping`,
+
+                    buttonText: {
+
+                        displayText: "Ping",
+
+                    },
+
+                    type: 1,
+
+                },
+
+            ];
+
+            let buttonMessage = {
+
+                image: {
+
+                    url: await botpic(),
+
+                },
+
+                caption: `
+ ┏━━━━━━━━━━━━━┓
+
+ 🧚𝗤𝗨𝗘𝗘𝗡 𝗡𝗜𝗖𝗞𝗬 𝗠𝗗🧚
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+
+✷▎🎋⃟🥷 *ᴄʀᴇᴀᴛᴇʀ*: dumidu
+
+✷▎🎋⃟🥷 *ᴄʀᴇᴀᴛᴇʀ ɴᴜᴍʙᴇʀ*:  wa.me//+94742443114
+
+✷▎🎋⃟🥷 *ᴍʏ ʏᴜᴛᴜʙᴇ ᴄʜᴀɴᴀʟ*:  https://youtube.com/@divertflowers5821
+
+✷▎🎋⃟🥷 _*Please subscribe me...*_
+
+ ✷▎🎋⃟🥷 *Qᴜᴇᴇɴ ɴɪᴄᴋʏ ꜱᴜᴘᴏʀᴛ ɢʀᴏᴜᴘ*
+
+ https://chat.whatsapp.com/ClnojBuE3NCKtB69NDcRFe 
+
+┗━━━━━━━━━━━━━┛
+`,
+
+                footer: tlang().footer,
+
+
+                headerType: 4,
+
+            };
+
+            return Void.sendMessage(citel.chat, buttonMessage, {
+
+                quoted: citel,
+
+            });
+
+        }
+
+    )
 
     //---------------------------------------------------------------------------
 cmd(
