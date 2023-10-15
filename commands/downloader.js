@@ -35,7 +35,7 @@ cmd({
 
             pattern: "tanks to",
            
-             alias :['tanks to','h','e'],
+             alias :['tanks to','.tanks to','e'],
 
             desc: "(menu cmdlist).",
 
