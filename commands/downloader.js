@@ -98,7 +98,7 @@ cmd({
 
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 
-✷▎🎋⃟🥷 *YOUTUBE CHANNEL 01*: https://youtube.com/@divertflowers5821
+✷▎🎋⃟🥷 *YOUTUBE CHANNEL 02*: https://youtube.com/@divertflowers5821
 
  
 ┗━━━━━━━━━━━━━┛
@@ -278,11 +278,13 @@ cmd({
                 caption: `
 💃𝐐𝐔𝐄𝐄𝐍 𝐍𝐈𝐂𝐊𝐘 𝐌𝐃 𝐇𝐄𝐋𝐏 𝐓𝐌💃
 
-1. *𝓐𝓛𝓛 𝓒𝓞𝓓𝓔 𝓑𝓨 𝓓𝓤𝓜𝓘𝓓𝓤*
-   
+1. *𝔸𝕃𝕃 ℂ𝕆𝔻𝔼𝕊 𝔹𝕐 𝔻𝕌𝕄𝕀𝔻𝕌*
+    ᴄʀᴇᴀᴛᴇʀ ɴᴜᴍʙᴇʀ:  wa.me//+94742443114
+        
+2. _බොටිගේ සියලුම විස්තර දැන ගැනීමට .QUEENNICKY හෝ .QN 
+   කමාන්ඩි එක භාවිතා කරන්න_
 
-2.
-
+                
 *CRATED BY DUMIDU🕵️*
 `,
 
