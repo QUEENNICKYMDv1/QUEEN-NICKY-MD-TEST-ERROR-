@@ -187,6 +187,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "image",
+            react: "🎆",
             category: "search",
             desc: "Searches Image on Google",
             use: '<text>',
