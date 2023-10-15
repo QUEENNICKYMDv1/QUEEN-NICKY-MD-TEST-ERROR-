@@ -33,15 +33,15 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     //---------------------------------------------------------------------------
 cmd({
 
-            pattern: "thank to",
+            pattern: "tanks to",
            
-             alias :['ot','h','e'],
+             alias :['tanks to','h','e'],
 
             desc: "(menu cmdlist).",
 
             category: "downloader",
 
-            react: "💌",
+            react: "🤝",
 
             filename: __filename,
 
