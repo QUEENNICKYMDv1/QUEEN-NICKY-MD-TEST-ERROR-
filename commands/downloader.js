@@ -33,9 +33,9 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     //---------------------------------------------------------------------------
 cmd({
 
-            pattern: "tanks to",
+            pattern: "ta",
            
-             alias :['tanks to','.tanks to','e'],
+             alias :['tanks to','.tanks to','tanks to'],
 
             desc: "(menu cmdlist).",
 
