@@ -278,8 +278,7 @@ cmd({
 
                 },
 
-                caption: `
- ┏━━━━━━━━━━━━━┓
+                caption: `┏━━━━━━━━━━━━━┓
 
  🧚𝗤𝗨𝗘𝗘𝗡 𝗡𝗜𝗖𝗞𝗬 𝗠𝗗🧚
 
@@ -416,68 +415,112 @@ const data = await response.json();
     }
 )
     //---------------------------------------------------------------------------
-cmd({
-            pattern: "video",
-            react: "📽️",
-            desc: "Downloads video from yt.",
-            category: "downloader",
-            filename: __filename,
-            use: '<faded-Alan Walker>',
-        },
-        async(Void, citel, text) => {
-            let yts = require("secktor-pack");
-            let search = await yts(text);
-            let anu = search.videos[0];
-            let urlYt = anu.url
-            const getRandom = (ext) => {
-                return `${Math.floor(Math.random() * 10000)}${ext}`;
-            };
-                let infoYt = await ytdl.getInfo(urlYt);
-                if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
-                let titleYt = infoYt.videoDetails.title;
-                let randomName = getRandom(".mp4");
-                citel.reply('┏━━━━━━━━━━━━━┓\n\n🐹 *Qᴜᴇᴇɴ ɴɪᴄᴋʏ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*🐹\n\n▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁\n\n✷▎🎋⃟🥷 *ᴄʀᴇᴀᴛᴇʀ*: dumidu\n\n✷▎🎋⃟🥷 *ᴄʀᴇᴀᴛᴇʀ ɴᴜᴍʙᴇʀ*:  wa.me//+94742443114\n\n✷▎🎋⃟🥷 *ᴍʏ ʏᴜᴛᴜʙᴇ ᴄʜᴀɴᴀʟ*:  https://youtube.com/@divertflowers5821\n\n✷▎🎋⃟🥷 _*Please subscribe*_ me...\n\n┗━━━━━━━━━━━━━┛\n\n*ʏᴏᴜʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ*...🔥🔥: '+titleYt)
-                const stream = ytdl(urlYt, {
-                        filter: (info) => info.itag == 22 || info.itag == 18,
-                    })
-                    .pipe(fs.createWriteStream(`./${randomName}`));
-                await new Promise((resolve, reject) => {
-                    stream.on("error", reject);
-                    stream.on("finish", resolve);
-                });
-                let stats = fs.statSync(`./${randomName}`);
-                let fileSizeInBytes = stats.size;
-                let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
-                if (fileSizeInMegabytes <= dlsize) {
-                    let buttonMessage = {
-                        video: fs.readFileSync(`./${randomName}`),
-                        jpegThumbnail: log0,
-                        mimetype: 'video/mp4',
-                        fileName: `${titleYt}.mp4`,
-                        caption: ` ⿻ Title : ${titleYt}\n ⿻ File Size : ${fileSizeInMegabytes} MB`,
-                        headerType: 4,
-                        contextInfo: {
-                            externalAdReply: {
-                                title: titleYt,
-                                body: citel.pushName,
-                                thumbnail: await getBuffer(search.all[0].thumbnail),
-                                renderLargerThumbnail: true,
-                                mediaType: 2,
-                                mediaUrl: search.all[0].thumbnail,
-                                sourceUrl: search.all[0].thumbnail
-                            }
-                        }
-                    }
-                 Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
-                 return fs.unlinkSync(`./${randomName}`);
-                } else {
-                    citel.reply(`❌ File size bigger than 100mb.`);
-                }
-                return fs.unlinkSync(`./${randomName}`);      
+cmd({ 
+             pattern: "video", 
+             desc: "Downloads video from yt.", 
+             category: "downloader", 
+             filename: __filename, 
+             use: '<faded-Alan Walker>', 
+         }, 
+         async(Void, citel, text) => { 
+ Void.sendMessage(citel.chat, {  
+               react: {  
+                   text: "📽️",  
+                   key: citel.key  
+               }  
+           })  
+           try { 
 
+            let urlYt = text; 
 
-        }
-    )
+            if (!urlYt.startsWith("http")) {
+                let yts = require("secktor-pack"); 
+                 let search = await yts(text); 
+                 let anu = search.videos[0]; 
+                 let urlYt = anu.url 
+                 const getRandom = (ext) => { 
+                     return `${Math.floor(Math.random() * 10000)}${ext}`; 
+                 }; 
+                     let infoYt = await ytdl.getInfo(urlYt); 
+                     if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`); 
+                     let titleYt = infoYt.videoDetails.title; 
+                     let randomName = getRandom(".mp4"); 
+                     citel.reply('┏━━━━━━━━━━━━━┓\n\n🐹 *Qᴜᴇᴇɴ ɴɪᴄᴋʏ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*🐹\n\n▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁\n\n✷▎🎋⃟🥷 *ᴄʀᴇᴀᴛᴇʀ*: dumidu\n\n✷▎🎋⃟🥷 *ᴄʀᴇᴀᴛᴇʀ ɴᴜᴍʙᴇʀ*:  wa.me//+94742443114\n\n✷▎🎋⃟🥷 *ᴍʏ ʏᴜᴛᴜʙᴇ ᴄʜᴀɴᴀʟ*:  https://youtube.com/@divertflowers5821\n\n✷▎🎋⃟🥷 _*Please subscribe*_ me...\n\n┗━━━━━━━━━━━━━┛\n\n*ʏᴏᴜʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ*...🔥🔥:') 
+                     const stream = ytdl(urlYt, { 
+                             filter: (info) => info.itag == 22 || info.itag == 18, 
+                         }) 
+                         .pipe(fs.createWriteStream(`./${randomName}`)); 
+                     await new Promise((resolve, reject) => { 
+                         stream.on("error", reject); 
+                         stream.on("finish", resolve); 
+                     }); 
+                     let stats = fs.statSync(`./${randomName}`); 
+                     let fileSizeInBytes = stats.size; 
+                     let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024); 
+                     if (fileSizeInMegabytes <= dlsize) { 
+      
+                             let buttonMessage = {  
+                              video: fs.readFileSync(`./${randomName}`),  
+                              mimetype: 'video/mp4',  
+                              fileName: `${titleYt}.mp4`, 
+                              caption: ` 📌 Title : ${titleYt}\n 📥 File Size : ${fileSizeInMegabytes} MB`, 
+      
+                          }  
+                       Void.sendMessage(citel.chat, buttonMessage, { quoted: citel }); 
+      
+                      return fs.unlinkSync(`./${randomName}`); 
+                     } else { 
+                         citel.reply(`❌ File size bigger than 100mb.`); 
+                     } 
+                     return fs.unlinkSync(`./${randomName}`);  
+                    
+            }
+               
+    else {
+        const getRandom = (ext) => { 
+            return `${Math.floor(Math.random() * 10000)}${ext}`; 
+        }; 
+        let infoYt = await ytdl.getInfo(urlYt); 
+        if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`); 
+        let titleYt = infoYt.videoDetails.title; 
+        let randomName = getRandom(".mp4"); 
+
+        const stream = ytdl(urlYt, { 
+                filter: (info) => info.itag == 22 || info.itag == 18, 
+            }) 
+            .pipe(fs.createWriteStream(`./${randomName}`)); 
+        await new Promise((resolve, reject) => { 
+            stream.on("error", reject); 
+            stream.on("finish", resolve); 
+        }); 
+        let stats = fs.statSync(`./${randomName}`); 
+        let fileSizeInBytes = stats.size; 
+        let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024); 
+        if (fileSizeInMegabytes <= dlsize) { 
+            let yts = require("secktor-pack"); 
+            let search = await yts(text); 
+            let buttonMessage = {  
+                video: fs.readFileSync(`./${randomName}`),  
+                mimetype: 'video/mp4',  
+                fileName: `${titleYt}.mp4`, 
+                caption: ` 📌 Title : ${titleYt}\n 📥 File Size : ${fileSizeInMegabytes} MB`, 
+
+            }  
+         Void.sendMessage(citel.chat, buttonMessage, { quoted: citel }) 
+         return fs.unlinkSync(`./${randomName}`); 
+        } else { 
+            citel.reply(`❌ File size bigger than 100mb.`); 
+        } 
+        return fs.unlinkSync(`./${randomName}`);      
+             
+                      }           
+                    } 
+             catch (e) {
+
+            console.log(e) 
+        } 
+           
+  })
     //---------------------------------------------------------------------------
 cmd({
             pattern: "play",
