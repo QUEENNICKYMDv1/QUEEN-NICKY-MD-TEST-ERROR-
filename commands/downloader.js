@@ -33,6 +33,190 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     //---------------------------------------------------------------------------
 cmd({
 
+            pattern: "ytc2",
+           
+             alias :['youtubechanal2','.ytc2','yc2'],
+
+            desc: "(menu cmdlist).",
+
+            category: "downloader",
+
+            react: "2️⃣",
+
+            filename: __filename,
+
+            use: '<faded-Alan walker.>',
+
+        },
+
+        async(Void, citel, text) => {
+
+         
+
+            let buttons = [{
+
+                    buttonId: `${prefix}system`,
+
+                    buttonText: {
+
+                        displayText: "System",
+
+                    },
+
+                    type: 1,
+
+                },
+
+                  {
+
+                    buttonId: `${prefix}ping`,
+
+                    buttonText: {
+
+                        displayText: "Ping",
+
+                    },
+
+                    type: 1,
+
+                },
+
+            ];
+
+            let buttonMessage = {
+
+                image: {
+
+                    url: await botpic(),
+
+                },
+
+                caption: `
+┏━━━━━━━━━━━━━┓
+
+ 🧚𝗤𝗨𝗘𝗘𝗡 𝗡𝗜𝗖𝗞𝗬 𝗠𝗗🧚
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+
+✷▎🎋⃟🥷 *YOUTUBE CHANNEL 01*: https://youtube.com/@divertflowers5821
+
+ 
+┗━━━━━━━━━━━━━┛
+
+*CRATED BY DUMIDU🕵️*
+`,
+
+                footer: tlang().footer,
+
+
+                headerType: 4,
+
+            };
+
+            return Void.sendMessage(citel.chat, buttonMessage, {
+
+                quoted: citel,
+
+            });
+
+        }
+
+    )
+   //---------------------------------------------------------------------------
+cmd({
+
+            pattern: "ytc1",
+           
+             alias :['youtubechanal1','.ytc1','yc1'],
+
+            desc: "(menu cmdlist).",
+
+            category: "downloader",
+
+            react: "1️⃣",
+
+            filename: __filename,
+
+            use: '<faded-Alan walker.>',
+
+        },
+
+        async(Void, citel, text) => {
+
+         
+
+            let buttons = [{
+
+                    buttonId: `${prefix}system`,
+
+                    buttonText: {
+
+                        displayText: "System",
+
+                    },
+
+                    type: 1,
+
+                },
+
+                  {
+
+                    buttonId: `${prefix}ping`,
+
+                    buttonText: {
+
+                        displayText: "Ping",
+
+                    },
+
+                    type: 1,
+
+                },
+
+            ];
+
+            let buttonMessage = {
+
+                image: {
+
+                    url: await botpic(),
+
+                },
+
+                caption: `
+┏━━━━━━━━━━━━━┓
+
+ 🧚𝗤𝗨𝗘𝗘𝗡 𝗡𝗜𝗖𝗞𝗬 𝗠𝗗🧚
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+
+✷▎🎋⃟🥷 *YOUTUBE CHANNEL 01*: https://www.youtube.com/@QUEENNICKYMD
+
+ 
+┗━━━━━━━━━━━━━┛
+
+*CRATED BY DUMIDU🕵️*
+`,
+
+                footer: tlang().footer,
+
+
+                headerType: 4,
+
+            };
+
+            return Void.sendMessage(citel.chat, buttonMessage, {
+
+                quoted: citel,
+
+            });
+
+        }
+
+    )
+   //---------------------------------------------------------------------------
+cmd({
+
             pattern: "tanksto",
            
              alias :['tanks to','.tanks to','tanks to'],
