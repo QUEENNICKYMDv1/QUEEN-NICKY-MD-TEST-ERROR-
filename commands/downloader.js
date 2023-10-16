@@ -33,6 +33,101 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     //---------------------------------------------------------------------------
 cmd({
 
+            pattern: "GM",
+           
+             alias :['ගුඩි මෝර්නින්ග්','gmගායි්,'gm'],
+
+            desc: "(menu cmdlist).",
+
+            category: "downloader",
+
+            react: "🔆",
+
+            filename: __filename,
+
+            use: '<faded-Alan walker.>',
+
+        },
+
+        async(Void, citel, text) => {
+
+         
+
+            let buttons = [{
+
+                    buttonId: `${prefix}system`,
+
+                    buttonText: {
+
+                        displayText: "System",
+
+                    },
+
+                    type: 1,
+
+                },
+
+                  {
+
+                    buttonId: `${prefix}ping`,
+
+                    buttonText: {
+
+                        displayText: "Ping",
+
+                    },
+
+                    type: 1,
+
+                },
+
+            ];
+
+            let buttonMessage = {
+
+                image: {
+
+                    url: await botpic(),
+
+                },
+
+                caption: `
+○ ○ ○ ○ ○ 
+○ 
+○      ○ ○ ○ 
+○               ○  
+○ ○ ○ ○ ○ 
+
+
+○ ○              ○ ○ 
+○    ○         ○   ○ 
+○       ○   ○      ○ 
+○          ○          ○ 
+○          ○          ○ 
+
+
+*CRATED BY DUMIDU🕵️*
+`,
+
+                footer: tlang().footer,
+
+
+                headerType: 4,
+
+            };
+
+            return Void.sendMessage(citel.chat, buttonMessage, {
+
+                quoted: citel,
+
+            });
+
+        }
+
+    )
+   //---------------------------------------------------------------------------
+cmd({
+
             pattern: "hi",
            
              alias :['හායි','.හායිගායි්ස','HI'],
