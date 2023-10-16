@@ -106,7 +106,7 @@ cmd({
 
 *CRATED BY DUMIDU🕵️*
 `,
-
+👩‍🎓 Powered by ${Config.ownername}`;
                 footer: tlang().footer,
 
 
