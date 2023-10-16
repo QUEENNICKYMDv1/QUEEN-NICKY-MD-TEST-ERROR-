@@ -104,8 +104,7 @@ cmd({
        ❍
 ❍❍❍❍❍
 
-👩‍🎓 Powered by ${Config.ownername}`;
-                 
+               
 *CRATED BY DUMIDU🕵️*
 `,
 
