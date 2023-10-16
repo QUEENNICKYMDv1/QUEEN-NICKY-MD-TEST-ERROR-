@@ -33,15 +33,15 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     //---------------------------------------------------------------------------
 cmd({
 
-            pattern: "GM",
+            pattern: "Gm",
            
-             alias :['ගුඩි මෝර්නින්ග්','gmගායි්,'gm'],
+             alias :['GM','gm','g'],
 
             desc: "(menu cmdlist).",
 
             category: "downloader",
 
-            react: "🔆",
+            react: "👋",
 
             filename: __filename,
 
@@ -103,9 +103,9 @@ cmd({
 ○    ○         ○   ○ 
 ○       ○   ○      ○ 
 ○          ○          ○ 
-○          ○          ○ 
+○          ○          ○
 
-
+               
 *CRATED BY DUMIDU🕵️*
 `,
 
