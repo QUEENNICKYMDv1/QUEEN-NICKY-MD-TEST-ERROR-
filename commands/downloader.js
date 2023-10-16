@@ -104,9 +104,11 @@ cmd({
        ❍
 ❍❍❍❍❍
 
+👩‍🎓 Powered by ${Config.ownername}`;
+                 
 *CRATED BY DUMIDU🕵️*
 `,
-👩‍🎓 Powered by ${Config.ownername}`;
+
                 footer: tlang().footer,
 
 
