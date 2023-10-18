@@ -200,7 +200,7 @@ async(Void, citel,text,{isCreator}) => {
 
 if(!isCreator) return citel.reply(tlang().owner);
 let str="*ALL AVAILABLE THEMES IN QUEEN NICKY MD*"
-str+=`QUEEN NICKY MD\n\n\nTHEME:QUEEN NICKY MD` 
+str+=`QUEEN NICKY THEME:QUEEN NICKY MD` 
 return citel.reply(str)
     
 }
