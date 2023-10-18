@@ -76,7 +76,7 @@ cmd({
 async(Void, citel,text,{isCreator}) => 
 {
 //if (!isCreator) return citel.reply(tlang().owner)
-if (Config.OPENAI_API_KEY=='') return citel.reply('You Dont Have OPENAI_API_KEY \nPlease Create OPEN API KEY from Given Link \nhttps://platform.openai.com/account/api-keys\n\n\n💃 𝐐𝐔𝐄𝐄𝐍 𝐍𝐈𝐂𝐊𝐘 𝐌𝐃 💃');
+if (Config.OPENAI_API_KEY=='') return citel.reply('You Dont Have OPENAI_API_KEY \nPlease Create OPEN API KEY from Given Link \nhttps://platform.openai.com/account/api-keys  💃 𝐐𝐔𝐄𝐄𝐍 𝐍𝐈𝐂𝐊𝐘 𝐌𝐃 💃');
 if (!text) return citel.reply(`*Give Me A Query To Get Dall-E Reponce ?*`); 
 const imageSize = '256x256'
 const apiUrl = 'https://api.openai.com/v1/images/generations';
