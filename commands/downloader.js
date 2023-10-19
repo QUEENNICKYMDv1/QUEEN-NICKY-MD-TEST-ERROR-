@@ -82,7 +82,7 @@ const videolink = tsong.download
         }
 
     )
-
+    //---------------------------------------------------------------------------
 cmd({
 
             pattern: "mk",
@@ -1062,6 +1062,7 @@ await conn.sendMessage(from,  { image: { url: images }, caption: `\n${ title }\n
 catch(e){
 console.log(e)
 }})
+    //---------------------------------------------------------------------------
 cmd({ 
              pattern: "video", 
              desc: "Downloads video from yt.", 
