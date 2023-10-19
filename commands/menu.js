@@ -1,6 +1,9 @@
+
+const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, Config } = require('../lib')
+
 cmd({
             pattern: "alive",
-            category: "general",
+            category: "menu1",
             filename: __filename,
             desc: "is bot alive??"
         },
