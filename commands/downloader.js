@@ -33,6 +33,158 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     //---------------------------------------------------------------------------
 cmd({
 
+
+
+            pattern: "tvideo",
+
+
+
+            alias: ["විඩියො","videot"],
+
+
+
+            desc: "song dl",
+
+
+
+            react: "🎥 ",
+
+
+
+            category: "downloader"
+
+
+
+        },
+
+
+
+        async(Void, citel, text) => {    
+
+
+
+        let yts = require("secktor-pack");
+
+
+
+            let search = await yts(text);
+
+
+
+            let anu = search.videos[0];
+
+
+
+            if (!text) return     
+
+
+
+
+
+
+
+const tsong = await fetchJson(`https://legend-army-api.onrender.com/api/dowloader/yt?url=${anu.url}&apikey=7cbc80f5`)
+
+
+
+const videolink = tsong.download
+
+
+
+            citel.reply (`*Download Your Video*`);
+
+            citel.reply (`*Upload Your Video*`);
+
+
+
+            return Void.sendMessage(citel.chat, {
+
+
+
+                video: {
+
+
+
+                    url: videolink ,
+
+
+
+                },
+
+
+
+                mimetype: "video/mp4",
+
+
+
+
+
+
+
+            }, {
+
+
+
+                quoted: citel,
+
+
+
+            });
+
+
+
+        }
+
+
+
+    )
+    //---------------------------------------------------------------------------
+cmd({
+
+            pattern: "fbs",
+
+            desc: "fb down",
+
+            react: "🎶",
+
+            category: "downloader"
+
+        },
+
+        async(Void, citel, text) => {
+
+            if (!text) return
+
+const fbdls = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=${Config.botapikey}`)
+
+const videolink = fbdls.result.audio
+
+            citel.reply (`*Hello ${citel.pushName} I Am Finding Your Facebook Audio*`);
+
+       return Void.sendMessage(citel.chat, {
+
+                audio: {
+
+                    url: videolink ,
+
+                },
+
+                mimetype: "audio/mpeg",
+
+                fileName: `prabath-md-fb-song-downloader`,
+
+            }, {
+
+                quoted: citel,
+
+            });
+
+        }
+
+    )
+    //---------------------------------------------------------------------------
+cmd({
+
             pattern: "testsong",
 
             desc: "song dl",
