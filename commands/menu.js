@@ -67,3 +67,62 @@ cmd({
 
         }
     )
+cmd({
+            pattern: "1",
+            react: "✅",
+            category: "general",
+            filename: __filename,
+            desc: "is bot alive??"
+        },
+        async(Void, citel, text, isAdmins) => {
+            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Mr.Hansamala.*`
+            const alivtxt = `
+┏━━━━━━━━━━━━━━━✦
+┃ ┌╼╼╼╼╼╼╼╼╼╼●
+┃ │ *𝙳𝙾𝚆𝙽𝙻𝙾𝙳𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂*
+┃ ├╼╼╼╼╼╼╼╼╼╼●
+┃ ├❑🧜‍♂️⃟➤ᴅᴏᴡɴᴀᴘᴋ
+┃ ├❑🧜‍♂️⃟➤ɪᴏꜱ
+┃ ├❑🧜‍♂️⃟➤ɴᴀꜱᴀ
+┃ ├❑🧜‍♂️⃟➤ᴡᴀʙᴇᴛᴀ
+┃ ├❑🧜‍♂️⃟➤ᴛᴛꜱ
+┃ ├❑🧜‍♂️⃟➤ʏᴛꜱ
+┃ ├❑🧜‍♂️⃟➤ᴠɪᴅᴇᴏ
+┃ ├❑🧜‍♂️⃟➤ᴘʟᴀʏ
+┃ ├❑🧜‍♂️⃟➤ʀɪɴɢᴛᴏɴᴇ
+┃ ├❑🧜‍♂️⃟➤ᴘɪɴᴛ
+┃ ├❑🧜‍♂️⃟➤ᴍᴇᴅɪᴀꜰɪʀᴇ
+┃ ├❑🧜‍♂️⃟➤ʏᴛᴍᴘ4
+┃ ├❑🧜‍♂️⃟➤ʏᴛᴍᴘ3
+┃ ├❑🧜‍♂️⃟➤ʏᴛᴅᴏᴄ
+┃ ├❑🧜‍♂️⃟➤ꜱꜱ
+┃ ├❑🧜‍♂️⃟➤ꜰʙ
+┃ ├❑🧜‍♂️⃟➤ᴛɪᴋᴛᴏᴋ
+┃ ├❑🧜‍♂️⃟➤ᴛᴠɪᴅᴇᴏ
+┃ ├❑🧜‍♂️⃟➤ꜰʙꜱ
+┃ ├❑🧜‍♂️⃟➤ᴅᴀᴅᴜ
+┃ ├❑🧜‍♂️⃟➤ᴛᴛᴘ
+┃ ├❑🧜‍♂️⃟➤ᴠɪᴅᴇᴏ3
+┃ ├❑🧜‍♂️⃟➤ᴛᴇꜱᴛꜱᴏɴɢ
+┃ ├❑🧜‍♂️⃟➤ᴀᴛᴛᴘ
+┃ ├❑🧜‍♂️⃟➤ᴛɪᴋᴛᴏᴋ
+┃ ├❑🧜‍♂️⃟➤ᴘʟᴀʏʟɪꜱᴛ
+┃ └╼╼╼╼╼╼╼╼╼╼●
+┗╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾✦
+🧙‍♂️ *_Qᴜᴇᴇɴ ɴɪᴄᴋʏ ᴍᴅ_*
+👩‍💻 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴅᴜᴍɪᴅᴜ_*
+`;
+            let aliveMessage = {
+                image: {
+                    url: await botpic(),
+                },
+                caption: alivtxt,
+                footer: tlang().footer,
+                headerType: 4,
+            };
+             return Void.sendMessage(citel.chat, aliveMessage, {
+                quoted: citel,
+            });
+
+        }
+    )
