@@ -2,13 +2,13 @@
 const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, Config } = require('../lib')
 
 cmd({
-            pattern: "alive",
+            pattern: "menu",
             category: "menu1",
             filename: __filename,
             desc: "is bot alive??"
         },
         async(Void, citel, text, isAdmins) => {
-            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Mr.Hansamala.*`
+            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Dumidu.*`
             const alivtxt = `
 ❍═════════════════════❍
     *_𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙴𝙽𝚄 𝙻𝙸𝚂𝚃_*
