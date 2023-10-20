@@ -1,4 +1,3 @@
-𝚊
 const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, Config } = require('../lib')
 
 cmd({
