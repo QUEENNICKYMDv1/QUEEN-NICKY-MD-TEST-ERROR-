@@ -343,7 +343,7 @@ cmd({
         }
     )
 cmd({
-            pattern: "6",
+            pattern: "7",
             react: "✅",
             category: "general",
             filename: __filename,
