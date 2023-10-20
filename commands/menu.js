@@ -342,3 +342,41 @@ cmd({
 
         }
     )
+cmd({
+            pattern: "6",
+            react: "✅",
+            category: "general",
+            filename: __filename,
+            desc: "is bot alive??"
+        },
+        async(Void, citel, text, isAdmins) => {
+            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Dumidu*`
+            const alivtxt = `
+┏━━━━━━━━━━━━━━━✦
+┃ ┌╼╼╼╼╼╼╼╼╼╼●
+┃ │ *𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙽𝙴𝚆𝚂 𝙼𝙴𝙽𝚄
+┃ ├╼╼╼╼╼╼╼╼╼╼●
+┃ ├❑🐉⃟➤ɴᴀꜱᴀ
+┃ ├❑🐉⃟➤ᴛᴇᴄʜɴᴇᴡꜱ
+┃ ├❑🐉⃟➤ɴᴇᴡꜱ/ᴇꜱᴀɴᴀ
+┃ ├❑🐉⃟➤ʜɪʀᴜɴᴇᴡꜱ
+┃ ├❑🐉⃟➤sirasa
+┃ └╼╼╼╼╼╼╼╼╼╼●
+┗━━━━━━━━━━━━━━━✦
+*🧙‍♂️ 𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳*.
+👩‍💻 _𝙲𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝙳𝚄𝙼𝙸𝙳𝚄_
+`;
+            let aliveMessage = {
+                image: {
+                    url: await botpic(),
+                },
+                caption: alivtxt,
+                footer: tlang().footer,
+                headerType: 4,
+            };
+             return Void.sendMessage(citel.chat, aliveMessage, {
+                quoted: citel,
+            });
+
+        }
+    )
