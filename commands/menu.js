@@ -2,6 +2,7 @@ const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime
 
 cmd({
             pattern: "menu",
+            react: "📃",
             category: "menu1",
             filename: __filename,
             desc: "is bot alive??"
