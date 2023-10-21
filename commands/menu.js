@@ -495,44 +495,6 @@ cmd({
         }
     )
 cmd({
-            pattern: "16",
-            react: "✅",
-            category: "general",
-            filename: __filename,
-            desc: "is bot alive??"
-        },
-        async(Void, citel, text, isAdmins) => {
-            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Dumidu*`
-            const alivtxt = `
-
-
-┏━━━━━━━━━━━━━━━✦
-┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │ *𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙶𝙴𝙽 𝙼𝙴𝙽𝚄*
-┃ ├╼╼╼╼╼╼╼╼╼╼●
-┃ ├❑💦⃟➤ᴛᴇxᴛ
-┃ ├❑💦⃟➤ɪᴍᴀɢᴇ
-┃ ├❑💦⃟➤ᴠɪᴅᴇᴏ
-┃ └╼╼╼╼╼╼╼╼╼╼●
-┗━━━━━━━━━━━━━━━✦
-*🧙‍♂️ 𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳*.
-👩‍💻 _𝙲𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝙳𝚄𝙼𝙸𝙳𝚄_
-`;
-            let aliveMessage = {
-                image: {
-                    url: await botpic(),
-                },
-                caption: alivtxt,
-                footer: tlang().footer,
-                headerType: 4,
-            };
-             return Void.sendMessage(citel.chat, aliveMessage, {
-                quoted: citel,
-            });
-
-        }
-    )
-cmd({
             pattern: "12",
             react: "✅",
             category: "general",
@@ -575,7 +537,7 @@ cmd({
         }
     )
 cmd({
-            pattern: "16",
+            pattern: "13",
             react: "✅",
             category: "general",
             filename: __filename,
@@ -596,6 +558,90 @@ cmd({
 ┃ ├❑✨⃟➤ʀᴘᴜꜱꜱʏ
 ┃ ├❑✨⃟➤ꜱᴏʟᴏ
 ┃ ├❑✨⃟➤ᴠɪxᴇɴ
+┃ └╼╼╼╼╼╼╼╼╼╼●
+┗━━━━━━━━━━━━━━━✦
+*🧙‍♂️ 𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳*.
+👩‍💻 _𝙲𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝙳𝚄𝙼𝙸𝙳𝚄_
+`;
+            let aliveMessage = {
+                image: {
+                    url: await botpic(),
+                },
+                caption: alivtxt,
+                footer: tlang().footer,
+                headerType: 4,
+            };
+             return Void.sendMessage(citel.chat, aliveMessage, {
+                quoted: citel,
+            });
+
+        }
+    )
+cmd({
+            pattern: "16",
+            react: "✅",
+            category: "general",
+            filename: __filename,
+            desc: "is bot alive??"
+        },
+        async(Void, citel, text, isAdmins) => {
+            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Dumidu*`
+            const alivtxt = `
+
+
+┏━━━━━━━━━━━━━━━✦
+┃ ┌╼╼╼╼╼╼╼╼╼╼●
+┃ │ *𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙶𝙴𝙽 𝙼𝙴𝙽𝚄*
+┃ ├╼╼╼╼╼╼╼╼╼╼●
+┃ ├❑💦⃟➤ᴛᴇxᴛ
+┃ ├❑💦⃟➤ɪᴍᴀɢᴇ
+┃ ├❑💦⃟➤ᴠɪᴅᴇᴏ
+┃ └╼╼╼╼╼╼╼╼╼╼●
+┗━━━━━━━━━━━━━━━✦
+*🧙‍♂️ 𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳*.
+👩‍💻 _𝙲𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝙳𝚄𝙼𝙸𝙳𝚄_
+`;
+            let aliveMessage = {
+                image: {
+                    url: await botpic(),
+                },
+                caption: alivtxt,
+                footer: tlang().footer,
+                headerType: 4,
+            };
+             return Void.sendMessage(citel.chat, aliveMessage, {
+                quoted: citel,
+            });
+
+        }
+    )
+cmd({
+            pattern: "17",
+            react: "✅",
+            category: "general",
+            filename: __filename,
+            desc: "is bot alive??"
+        },
+        async(Void, citel, text, isAdmins) => {
+            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Dumidu*`
+            const alivtxt = `
+┏━━━━━━━━━━━━━━━✦
+┃ ┌╼╼╼╼╼╼╼╼╼╼●
+┃ │ *𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝚆𝙴𝙴𝙱 𝙼𝙴𝙽𝚄*
+┃ ├╼╼╼╼╼╼╼╼╼╼●
+┣⃞❑⃝🧚‍♂️⃟➥ᴄʜᴀʀᴀᴄᴛᴇʀ
+┣⃞❑⃝🧚‍♂️⃟➥ʀᴀɴɪᴍᴇ
+┣⃞❑⃝🧚‍♂️⃟➥ᴀɴɪᴍᴇ
+┣⃞❑⃝🧚‍♂️⃟➥ᴀɴɪᴍᴇɴᴇᴡꜱ
+┣⃞❑⃝🧚‍♂️⃟➥ᴀɴɪᴍᴇᴘɪᴄ
+┣⃞❑⃝🧚‍♂️⃟➥ɴᴇᴋᴏ
+┣⃞❑⃝🧚‍♂️⃟➥ᴀɴɪᴍᴇᴡᴀʟʟ
+┣⃞❑⃝🧚‍♂️⃟➥ꜰᴏxɢɪʀʟ
+┣⃞❑⃝🧚‍♂️⃟➥ʟᴏʟɪ
+┣⃞❑⃝🧚‍♂️⃟➥ᴍᴀɴɢᴀ
+┣⃞❑⃝🧚‍♂️⃟➥ᴡᴀɪꜰᴜ
+┣⃞❑⃝🧚‍♂️⃟➥ᴘᴏᴋᴇᴘɪ
+┣⃞❑⃝🧚‍♂️⃟➥ᴘᴏᴋᴇᴍᴏɴ
 ┃ └╼╼╼╼╼╼╼╼╼╼●
 ┗━━━━━━━━━━━━━━━✦
 *🧙‍♂️ 𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳*.
