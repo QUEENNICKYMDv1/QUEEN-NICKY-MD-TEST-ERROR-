@@ -235,6 +235,44 @@ cmd({
         }
     )
 cmd({
+            pattern: "5",
+            react: "✅",
+            category: "general",
+            filename: __filename,
+            desc: "is bot alive??"
+        },
+        async(Void, citel, text, isAdmins) => {
+            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Dumidu*`
+            const alivtxt = `
+┏━━━━━━━━━━━━━━━✦
+┃ ┌╼╼╼╼╼╼╼╼╼╼●
+┃ │ *𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 𝙼𝙴𝙽𝚄
+┃ ├╼╼╼╼╼╼╼╼╼╼●
+┣⃞❑⃝🧚‍♂️⃟➥ᴘʜᴏᴛᴏ
+┣⃞❑⃝🧚‍♂️⃟➥ϙᴜᴏᴛᴇʟʏ
+┣⃞❑⃝🧚‍♂️⃟➥ꜰᴀɴᴄʏ
+┣⃞❑⃝🧚‍♂️⃟➥ᴛɪɴʏ
+┣⃞❑⃝🧚‍♂️⃟➥ᴛᴏᴀᴜᴅɪᴏ
+┃ └╼╼╼╼╼╼╼╼╼╼●
+┗━━━━━━━━━━━━━━━✦
+*🧙‍♂️ 𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳*.
+👩‍💻 _𝙲𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝙳𝚄𝙼𝙸𝙳𝚄_
+`;
+            let aliveMessage = {
+                image: {
+                    url: await botpic(),
+                },
+                caption: alivtxt,
+                footer: tlang().footer,
+                headerType: 4,
+            };
+             return Void.sendMessage(citel.chat, aliveMessage, {
+                quoted: citel,
+            });
+
+        }
+    )
+cmd({
             pattern: "4",
             react: "✅",
             category: "general",
@@ -475,6 +513,42 @@ cmd({
 ┃ ├❑🍁⃟➤ᴀᴛᴛᴘ
 ┃ ├❑🍁⃟➤ᴛᴛᴘ
 ┃ ├❑🍁⃟➤ꜱᴛᴇᴀʟ
+┃ └╼╼╼╼╼╼╼╼╼╼●
+┗━━━━━━━━━━━━━━━✦
+*🧙‍♂️ 𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳*.
+👩‍💻 _𝙲𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝙳𝚄𝙼𝙸𝙳𝚄_
+`;
+            let aliveMessage = {
+                image: {
+                    url: await botpic(),
+                },
+                caption: alivtxt,
+                footer: tlang().footer,
+                headerType: 4,
+            };
+             return Void.sendMessage(citel.chat, aliveMessage, {
+                quoted: citel,
+            });
+
+        }
+    )
+cmd({
+            pattern: "11",
+            react: "✅",
+            category: "general",
+            filename: __filename,
+            desc: "is bot alive??"
+        },
+        async(Void, citel, text, isAdmins) => {
+            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Dumidu*`
+            const alivtxt = `
+┏━━━━━━━━━━━━━━━✦
+┃ ┌╼╼╼╼╼╼╼╼╼╼●
+┃ │ *𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙰𝙸 𝙼𝙴𝙽𝚄*
+┃ ├╼╼╼╼╼╼╼╼╼╼●
+┣⃞❑⃝🧚‍♂️⃟➥ᴄʜᴀᴛ
+┣⃞❑⃝🧚‍♂️⃟➥ᴅᴀʟʟᴇ
+┣⃞❑⃝🧚‍♂️⃟➥ɢᴘᴛ
 ┃ └╼╼╼╼╼╼╼╼╼╼●
 ┗━━━━━━━━━━━━━━━✦
 *🧙‍♂️ 𝚀𝚄𝙴𝙴𝙽 𝙽𝙸𝙲𝙺𝚈 𝙼𝙳*.
