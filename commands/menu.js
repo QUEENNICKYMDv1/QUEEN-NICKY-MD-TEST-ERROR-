@@ -75,7 +75,7 @@ cmd({
             desc: "is bot alive??"
         },
         async(Void, citel, text, isAdmins) => {
-            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Dumidu.*`
+            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Mr.Hansamala.*`
             const alivtxt = `
 ┏━━━━━━━━━━━━━━━✦
 ┃ ┌╼╼╼╼╼╼╼╼╼╼●
@@ -114,7 +114,7 @@ cmd({
 `;
             let aliveMessage = {
                 image: {
-                    url: await botpic(),
+                    url: 'https://telegra.ph/file/197373b612da311e2c9d7.jpg',
                 },
                 caption: alivtxt,
                 footer: tlang().footer,
