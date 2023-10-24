@@ -114,7 +114,7 @@ cmd({
 `;
             let aliveMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/197373b612da311e2c9d7.jpg',
+                    url: 'https://telegra.ph/file/355ed844b46bc6eea0f75.jpg',
                 },
                 caption: alivtxt,
                 footer: tlang().footer,
